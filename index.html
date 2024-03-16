@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            if (!navigator.onLine) {
+                alert("Please turn on mobile data to load the style sheets.");
+            }
+        </script>
+        <title>Tic Tac Toe</title>
+    </head>
+
+    <body class="bg-slate-900 text-gray-50">
+        <main
+            class="flex flex-col justify-center items-center min-h-screen bg-slate-900"
+        >
+            <h1 class="mt-4 font-black text-3xl text-cyan-200 text-center">
+                Tic Tac Toe
+            </h1>
+            <span class="text-medium font-bold text-yellow-300 my-2"
+                >You [ X ] vs CPU [ O ]</span
+            >
+
+            <section
+                id="board"
+                class="flex-col justify-center mb-2 border rounded-md p-1"
+            ></section>
+
+            <p id="turn" class="text-green-300 font-medium"></p>
+            <p id="result" class="text-xl my-2 font-bold text-lime-200"></p>
+
+            <button
+                id="reset"
+                type="button"
+                class="mb-4 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            >
+                Reset
+            </button>
+            <p class="mb-2 text-sm font-bold text-gray-500">
+                Built with 🤍 by
+                <a class="text-gray-300" href="https://biodrop.io/aqib-m31"
+                    >@aqib-m31</a
+                >
+            </p>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
